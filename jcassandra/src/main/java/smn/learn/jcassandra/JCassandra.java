@@ -43,7 +43,15 @@ public class JCassandra {
 	public boolean createSchema(){
         ColumnFamilyDefinition cfDef = HFactory.createColumnFamilyDefinition(KEYSPACE,
         		COLUMN_FAMILY,
-                ComparatorType.BYTESTYPE);
+                ComparatorType.UTF8TYPE);
+        cfDef.setKeyValidationClass(ComparatorType.UTF8TYPE.getClassName());
+        
+//        BasicColumnFamilyDefinition columnFamilyDefinition = new BasicColumnFamilyDefinition();
+//        columnFamilyDefinition.setKeyspaceName("Keyspace1");
+//        columnFamilyDefinition.setName("StandardLong1");
+//        columnFamilyDefinition.setKeyValidationClass(ComparatorType.UTF8TYPE.getClassName());
+//        columnFamilyDefinition.setComparatorType(ComparatorType.UTF8TYPE.getClassName());
+
 
         KeyspaceDefinition keyspaceDef = HFactory.createKeyspaceDefinition(KEYSPACE,
 		              ThriftKsDef.DEF_STRATEGY_CLASS,

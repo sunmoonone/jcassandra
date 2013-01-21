@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lifecycleMappingMetadata>
+  <lifecycleMappings>
+    <lifecycleMapping>
+      <pluginExecutions>
+        <pluginExecution>
+          <pluginExecutionFilter>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-clean-plugin</artifactId>
+            <versionRange>2.4.1</versionRange>
+            <goals>
+              <goal>clean</goal>
+            </goals>
+          </pluginExecutionFilter>
+          <ignore />
+          <comment>source: uninteresting</comment>
+        </pluginExecution>
+        <pluginExecution>
+          <pluginExecutionFilter>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-resources-plugin</artifactId>
+            <versionRange>[2.4,)</versionRange>
+            <goals>
+              <goal>resources</goal>
+              <goal>testResources</goal>
+              <goal>copy-resources</goal>
+            </goals>
+          </pluginExecutionFilter>
+          <action>
+            <execute />
+          </action>
+          <comment>source: default</comment>
+        </pluginExecution>
+        <pluginExecution>
+          <pluginExecutionFilter>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <versionRange>[2.0,)</versionRange>
+            <goals>
+              <goal>compile</goal>
+              <goal>testCompile</goal>
+            </goals>
+            <parameters>
+              <compilerId>javac</compilerId>
+            </parameters>
+          </pluginExecutionFilter>
+          <action>
+            <configurator>
+              <id>org.eclipse.m2e.jdt.javaConfigurator</id>
+            </configurator>
+          </action>
+          <comment>source: extension(org.eclipse.m2e.jdt_1.2.0.20120903-1050)</comment>
+        </pluginExecution>
+        <pluginExecution>
+          <pluginExecutionFilter>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-resources-plugin</artifactId>
+            <versionRange>[2.4,)</versionRange>
+            <goals>
+              <goal>resources</goal>
+              <goal>testResources</goal>
+              <goal>copy-resources</goal>
+            </goals>
+          </pluginExecutionFilter>
+          <action>
+            <execute />
+          </action>
+          <comment>source: default</comment>
+        </pluginExecution>
+        <pluginExecution>
+          <pluginExecutionFilter>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <versionRange>[2.0,)</versionRange>
+            <goals>
+              <goal>compile</goal>
+              <goal>testCompile</goal>
+            </goals>
+            <parameters>
+              <compilerId>javac</compilerId>
+            </parameters>
+          </pluginExecutionFilter>
+          <action>
+            <configurator>
+              <id>org.eclipse.m2e.jdt.javaConfigurator</id>
+            </configurator>
+          </action>
+          <comment>source: extension(org.eclipse.m2e.jdt_1.2.0.20120903-1050)</comment>
+        </pluginExecution>
+        <pluginExecution>
+          <pluginExecutionFilter>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-surefire-plugin</artifactId>
+            <versionRange>2.10</versionRange>
+            <goals>
+              <goal>test</goal>
+            </goals>
+          </pluginExecutionFilter>
+          <ignore />
+          <comment>source: uninteresting</comment>
+        </pluginExecution>
+        <pluginExecution>
+          <pluginExecutionFilter>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-jar-plugin</artifactId>
+            <versionRange>2.3.2</versionRange>
+            <goals>
+              <goal>jar</goal>
+            </goals>
+          </pluginExecutionFilter>
+          <ignore />
+          <comment>source: uninteresting</comment>
+        </pluginExecution>
+        <pluginExecution>
+          <pluginExecutionFilter>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-install-plugin</artifactId>
+            <versionRange>2.3.1</versionRange>
+            <goals>
+              <goal>install</goal>
+            </goals>
+          </pluginExecutionFilter>
+          <ignore />
+          <comment>source: uninteresting</comment>
+        </pluginExecution>
+        <pluginExecution>
+          <pluginExecutionFilter>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-deploy-plugin</artifactId>
+            <versionRange>2.7</versionRange>
+            <goals>
+              <goal>deploy</goal>
+            </goals>
+          </pluginExecutionFilter>
+          <ignore />
+          <comment>source: uninteresting</comment>
+        </pluginExecution>
+        <pluginExecution>
+          <pluginExecutionFilter>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-site-plugin</artifactId>
+            <versionRange>3.0</versionRange>
+            <goals>
+              <goal>site</goal>
+            </goals>
+          </pluginExecutionFilter>
+          <ignore />
+          <comment>source: uninteresting</comment>
+        </pluginExecution>
+      </pluginExecutions>
+    </lifecycleMapping>
+  </lifecycleMappings>
+</lifecycleMappingMetadata>
+No goals have been specified for this build. You must specify a valid lifecycle phase or a goal in the format <plugin-prefix>:<goal> or <plugin-group-id>:<plugin-artifact-id>[:<plugin-version>]:<goal>. Available lifecycle phases are: validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy, pre-clean, clean, post-clean, pre-site, site, post-site, site-deploy. -> [Help 1]

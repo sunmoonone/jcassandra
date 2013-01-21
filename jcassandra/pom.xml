@@ -13,25 +13,49 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
-
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-jar-plugin</artifactId>
+        <version>2.3.2</version>
+        <configuration>
+          <archive>
+            <manifest>
+              <addClasspath>true</addClasspath>
+              <classpathPrefix>lib/</classpathPrefix>
+              <mainClass>Main</mainClass>
+            </manifest>
+          </archive>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+  
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>3.8.1</version>
       <scope>test</scope>
-    </dependency>
+    </dependency>    
+    <!--  
     <dependency>
       <groupId>org.hectorclient</groupId>
       <artifactId>hector-core</artifactId>
       <version>1.1-2</version>
-      <scope>runtime</scope>
+      <scope>compile</scope>
     </dependency>
     <dependency>
     	<groupId>org.hectorclient</groupId>
     	<artifactId>hector-object-mapper</artifactId>
 		<version>3.1-07</version>
     </dependency>
+    -->
+    <dependency>
+	    <groupId>org.firebrandocm</groupId>
+	    <artifactId>firebrand</artifactId>
+	    <version>1.0-SNAPSHOT</version>
+	</dependency>
     <dependency>
 	    <groupId>com.googlecode.json-simple</groupId>
 		<artifactId>json-simple</artifactId>
@@ -39,4 +63,30 @@
     </dependency>
     
   </dependencies>
+  
+  <repositories>
+    <repository>  
+    	<snapshots>
+        	<enabled>false</enabled>
+      	</snapshots>
+		<id>central1</id>  
+		<name>Central 1 Maven Repository</name>  
+		<url>http://repo1.maven.org/maven2</url>  
+		<layout>default</layout>  
+	</repository>  
+	<repository>
+	    <id>sonatype</id>
+	    <url>https://oss.sonatype.org/content/groups/public/</url>
+	    <releases>
+	        <enabled>true</enabled>
+	        <updatePolicy>daily</updatePolicy>
+	        <checksumPolicy>fail</checksumPolicy>
+	    </releases>
+	    <snapshots>
+	        <enabled>true</enabled>
+	        <updatePolicy>always</updatePolicy>
+	        <checksumPolicy>ignore</checksumPolicy>
+	    </snapshots>
+	</repository>
+  </repositories>
 </project>

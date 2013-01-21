@@ -52,16 +52,6 @@ under the License.
    | Default: ~/.m2/repository
   -->
   <!-- <localRepository>D:/hanson-platform/m2/repo</localRepository> -->
-  <repositories>
-	<repository>  
-		<id>central</id>  
-		<name>Central 1 Maven Repository</name>  
-		<url>http://repo1.maven.org/maven2</url>  
-		<layout>default</layout>  
-		<snapshotPolicy>always</snapshotPolicy>  
-	</repository>  
-  </repositories>
-
   <!-- interactiveMode
    | This will determine whether maven prompts you when it needs input. If set to false,
    | maven will use a sensible default value, perhaps based on some other setting, for
