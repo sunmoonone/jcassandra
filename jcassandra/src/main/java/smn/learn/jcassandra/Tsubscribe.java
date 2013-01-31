@@ -73,7 +73,9 @@ public class Tsubscribe {
 					.append("ctime int,")
 					.append("PRIMARY KEY ((subid,created_day),id)").append(")")
 					.append("WITH CLUSTERING ORDER BY (id DESC)").toString());
-
+			//userful for query used by solr
+			session.execute("CREATE INDEX created_at ON status(created_at)");
+			
 		} catch (AlreadyExistsException e) { /* It's ok, ignore */
 		}
 	}// end init schema
